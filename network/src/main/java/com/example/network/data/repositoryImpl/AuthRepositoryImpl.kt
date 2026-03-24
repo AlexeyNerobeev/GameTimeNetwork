@@ -43,7 +43,7 @@ class AuthRepositoryImpl: AuthRepository {
         }
     }
 
-    //метод для выхода
+    //метод для выхода из аккаунта
     override suspend fun logout() {
         supabase.auth.signOut()
     }
